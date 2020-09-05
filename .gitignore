@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-time
+dtest-time.so
+dtest-time.dylib
+dtest-time.dll
+dtest-time.a
+dtest-time.lib
+dtest-time-test-*
+*.exe
+*.o
+*.obj
+*.lst
