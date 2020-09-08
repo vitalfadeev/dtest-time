@@ -385,7 +385,303 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
 
-// expansion at source\app.d(595,5)
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.left ) == uint ) ||
+                    is( typeof( PROPS.left ) == int ) ||
+                    is( typeof( PROPS.left ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.left.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_left();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.left = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.top ) == uint ) ||
+                    is( typeof( PROPS.top ) == int ) ||
+                    is( typeof( PROPS.top ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.top.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_top();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.top = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.right ) == uint ) ||
+                    is( typeof( PROPS.right ) == int ) ||
+                    is( typeof( PROPS.right ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.right.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_right();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.right = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.bottom ) == uint ) ||
+                    is( typeof( PROPS.bottom ) == int ) ||
+                    is( typeof( PROPS.bottom ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.bottom.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_bottom();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.bottom = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.margin ) == uint ) ||
+                    is( typeof( PROPS.margin ) == int ) ||
+                    is( typeof( PROPS.margin ) == COLOR );
+            
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.marginLeft ) == uint ) ||
+                    is( typeof( PROPS.marginLeft ) == int ) ||
+                    is( typeof( PROPS.marginLeft ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.marginLeft.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_marginLeft();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.marginLeft = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.marginTop ) == uint ) ||
+                    is( typeof( PROPS.marginTop ) == int ) ||
+                    is( typeof( PROPS.marginTop ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.marginTop.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_marginTop();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.marginTop = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.marginRight ) == uint ) ||
+                    is( typeof( PROPS.marginRight ) == int ) ||
+                    is( typeof( PROPS.marginRight ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.marginRight.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_marginRight();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.marginRight = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.marginBottom ) == uint ) ||
+                    is( typeof( PROPS.marginBottom ) == int ) ||
+                    is( typeof( PROPS.marginBottom ) == COLOR );
+            
+
+// expansion at source\computer.d(65,13)
+
+                if ( style.marginBottom.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_marginBottom();
+                }
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.marginBottom = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.padding ) == uint ) ||
+                    is( typeof( PROPS.padding ) == int ) ||
+                    is( typeof( PROPS.padding ) == COLOR );
+            
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.paddingLeft ) == uint ) ||
+                    is( typeof( PROPS.paddingLeft ) == int ) ||
+                    is( typeof( PROPS.paddingLeft ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.paddingLeft = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.paddingTop ) == uint ) ||
+                    is( typeof( PROPS.paddingTop ) == int ) ||
+                    is( typeof( PROPS.paddingTop ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.paddingTop = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.paddingRight ) == uint ) ||
+                    is( typeof( PROPS.paddingRight ) == int ) ||
+                    is( typeof( PROPS.paddingRight ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.paddingRight = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.paddingBottom ) == uint ) ||
+                    is( typeof( PROPS.paddingBottom ) == int ) ||
+                    is( typeof( PROPS.paddingBottom ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.paddingBottom = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.borderWidth ) == uint ) ||
+                    is( typeof( PROPS.borderWidth ) == int ) ||
+                    is( typeof( PROPS.borderWidth ) == COLOR );
+            
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.borderLeftWidth ) == uint ) ||
+                    is( typeof( PROPS.borderLeftWidth ) == int ) ||
+                    is( typeof( PROPS.borderLeftWidth ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.borderLeftWidth = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.borderTopWidth ) == uint ) ||
+                    is( typeof( PROPS.borderTopWidth ) == int ) ||
+                    is( typeof( PROPS.borderTopWidth ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.borderTopWidth = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.borderRightWidth ) == uint ) ||
+                    is( typeof( PROPS.borderRightWidth ) == int ) ||
+                    is( typeof( PROPS.borderRightWidth ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.borderRightWidth = x;
+                        
+
+// expansion at source\animator.d(469,5)
+
+                return
+                    is( typeof( PROPS.borderBottomWidth ) == uint ) ||
+                    is( typeof( PROPS.borderBottomWidth ) == int ) ||
+                    is( typeof( PROPS.borderBottomWidth ) == COLOR );
+            
+
+// expansion at source\animator.d(342,17)
+
+                            element.style.borderBottomWidth = x;
+                        
+
+// expansion at source\animator.d(469,5)
 
                 return
                     is( typeof( PROPS.width ) == uint ) ||
@@ -393,133 +689,92 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                     is( typeof( PROPS.width ) == COLOR );
             
 
-// expansion at source\app.d(460,17)
+// expansion at source\computer.d(65,13)
+
+                if ( style.width.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_width();
+                }
+            
+
+// expansion at source\animator.d(342,17)
 
                             element.style.width = x;
                         
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
+// expansion at source\animator.d(469,5)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
+                return
+                    is( typeof( PROPS.display ) == uint ) ||
+                    is( typeof( PROPS.display ) == int ) ||
+                    is( typeof( PROPS.display ) == COLOR );
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
+// expansion at source\animator.d(469,5)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
+                return
+                    is( typeof( PROPS.lineHeight ) == uint ) ||
+                    is( typeof( PROPS.lineHeight ) == int ) ||
+                    is( typeof( PROPS.lineHeight ) == COLOR );
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
+// expansion at source\computer.d(65,13)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
+                if ( style.lineHeight.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_lineHeight();
+                }
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
+// expansion at source\animator.d(342,17)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
+                            element.style.lineHeight = x;
+                        
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
+// expansion at source\animator.d(469,5)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
+                return
+                    is( typeof( PROPS.wrapLine ) == uint ) ||
+                    is( typeof( PROPS.wrapLine ) == int ) ||
+                    is( typeof( PROPS.wrapLine ) == COLOR );
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
+// expansion at source\computer.d(65,13)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
+                if ( style.wrapLine.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_wrapLine();
+                }
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
+// expansion at source\animator.d(342,17)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
+                            element.style.wrapLine = x;
+                        
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
+// expansion at source\animator.d(469,5)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(448,16)
-cast(T)a < cast(T) b
+                return
+                    is( typeof( PROPS.overflow ) == uint ) ||
+                    is( typeof( PROPS.overflow ) == int ) ||
+                    is( typeof( PROPS.overflow ) == COLOR );
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(474,37)
-a < b
+// expansion at source\animator.d(469,5)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(477,32)
-a < b
+                return
+                    is( typeof( PROPS.overflowX ) == uint ) ||
+                    is( typeof( PROPS.overflowX ) == int ) ||
+                    is( typeof( PROPS.overflowX ) == COLOR );
+            
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(448,16)
-cast(T)a < cast(T) b
+// expansion at source\animator.d(469,5)
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
-alias a = __a ;
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
-alias b = __b ;
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
-a == b
-
-// expansion at 
-size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
-
-// expansion at 
-size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias TOP){alias Symbolize = TOP;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias LEFT){alias Symbolize = LEFT;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias RIGHT){alias Symbolize = RIGHT;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias CENTER){alias Symbolize = CENTER;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias JUSTIFY){alias Symbolize = JUSTIFY;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias INITIAL){alias Symbolize = INITIAL;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias INHERIT){alias Symbolize = INHERIT;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias UNDEFINED){alias Symbolize = UNDEFINED;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias INT){alias Symbolize = INT;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias UINT){alias Symbolize = UINT;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias FLOAT){alias Symbolize = FLOAT;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias STRING){alias Symbolize = STRING;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias COLOR){alias Symbolize = COLOR;}
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\traits.d(4161,13)
-template Symbolize(alias ALIGN){alias Symbolize = ALIGN;}
+                return
+                    is( typeof( PROPS.overflowY ) == uint ) ||
+                    is( typeof( PROPS.overflowY ) == int ) ||
+                    is( typeof( PROPS.overflowY ) == COLOR );
+            
 
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
@@ -535,6 +790,33 @@ alias b = __b ;
 
 // expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
 a <= b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
 
 // expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
 alias a = __a ;
@@ -698,8 +980,8 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
 
-// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\internal\memory.d(40,18)
-onOutOfMemoryError();
+// expansion at 
+size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
 
 // expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(474,37)
 a < b
@@ -710,22 +992,7 @@ a < b
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
 
-// expansion at 
-size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
-
-// expansion at 
-size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
-
-// expansion at 
-size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
-
-// expansion at 
-size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
-
-// expansion at C:\D\dmd2\windows\bin\..\..\src\druntime\import\core\time.d(2301,9)
-return MonoTimeImpl(_ticks + rhsConverted);
-
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.left.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -733,7 +1000,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.top.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -741,7 +1008,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.right.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -749,7 +1016,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.bottom.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -757,7 +1024,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.marginLeft.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -765,7 +1032,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.marginTop.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -773,7 +1040,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.marginRight.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -781,7 +1048,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.marginBottom.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -789,7 +1056,15 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
+
+                if ( style.width.type != ValueType.UNDEFINED )   // Style Properties Less Important
+                {
+                    Compute_width();
+                }
+            
+
+// expansion at source\computer.d(49,17)
 
                 if ( style.display.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -797,7 +1072,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.lineHeight.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -805,7 +1080,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(519,17)
+// expansion at source\computer.d(49,17)
 
                 if ( style.wrapLine.type != ValueType.UNDEFINED )   // Style Properties Less Important
                 {
@@ -813,7 +1088,7 @@ return MonoTimeImpl(_ticks + rhsConverted);
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.left.type == ValueType.INT )
                 {
@@ -843,7 +1118,7 @@ alias b = __b ;
 // expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
 a == b
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.left.type == ValueType.STRING )
                 {
@@ -854,6 +1129,11 @@ a == b
                             computed.left = parent.computed.left;
                             return;
                         }
+                        else // No Parent
+                        {
+                            computed.left = Computed.left.init;
+                            return;
+                        }
                     }
                 }
             
@@ -861,7 +1141,7 @@ a == b
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.top.type == ValueType.INT )
                 {
@@ -879,7 +1159,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.top.type == ValueType.STRING )
                 {
@@ -890,11 +1170,16 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                             computed.top = parent.computed.top;
                             return;
                         }
+                        else // No Parent
+                        {
+                            computed.top = Computed.top.init;
+                            return;
+                        }
                     }
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.right.type == ValueType.INT )
                 {
@@ -912,7 +1197,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.right.type == ValueType.STRING )
                 {
@@ -923,11 +1208,16 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                             computed.right = parent.computed.right;
                             return;
                         }
+                        else // No Parent
+                        {
+                            computed.right = Computed.right.init;
+                            return;
+                        }
                     }
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.bottom.type == ValueType.INT )
                 {
@@ -945,7 +1235,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.bottom.type == ValueType.STRING )
                 {
@@ -956,11 +1246,16 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                             computed.bottom = parent.computed.bottom;
                             return;
                         }
+                        else // No Parent
+                        {
+                            computed.bottom = Computed.bottom.init;
+                            return;
+                        }
                     }
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.marginLeft.type == ValueType.INT )
                 {
@@ -978,7 +1273,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.marginTop.type == ValueType.INT )
                 {
@@ -996,7 +1291,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.marginRight.type == ValueType.INT )
                 {
@@ -1014,7 +1309,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.marginBottom.type == ValueType.INT )
                 {
@@ -1032,7 +1327,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.lineHeight.type == ValueType.INT )
                 {
@@ -1050,7 +1345,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.lineHeight.type == ValueType.STRING )
                 {
@@ -1061,11 +1356,16 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                             computed.lineHeight = parent.computed.lineHeight;
                             return;
                         }
+                        else // No Parent
+                        {
+                            computed.lineHeight = Computed.lineHeight.init;
+                            return;
+                        }
                     }
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.wrapLine.type == ValueType.INT )
                 {
@@ -1083,7 +1383,7 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                 }
             
 
-// expansion at source\uno_window.d(601,13)
+// expansion at source\computer.d(193,13)
 
                 if ( style.wrapLine.type == ValueType.STRING )
                 {
@@ -1094,12 +1394,86 @@ size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.objec
                             computed.wrapLine = parent.computed.wrapLine;
                             return;
                         }
+                        else // No Parent
+                        {
+                            computed.wrapLine = Computed.wrapLine.init;
+                            return;
+                        }
                     }
                 }
             
 
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
+// expansion at 
+size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\internal\memory.d(40,18)
+onOutOfMemoryError();
+
+// expansion at 
+size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
+// expansion at 
+size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\druntime\import\core\time.d(2301,9)
+return MonoTimeImpl(_ticks + rhsConverted);
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(448,16)
+cast(T)a < cast(T) b
+
+// expansion at 
+size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
+// expansion at 
+size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(448,16)
+cast(T)a < cast(T) b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(474,37)
+a < b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(477,32)
+a < b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(218,13)
+alias a = __a ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(219,13)
+alias b = __b ;
+
+// expansion at C:\D\dmd2\windows\bin\..\..\src\phobos\std\functional.d(220,20)
+a == b
 
 // expansion at 
 size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
