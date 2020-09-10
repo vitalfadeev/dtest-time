@@ -490,6 +490,16 @@ struct Drawer
     pragma( inline )
     void DisplayOutside_Inline( Element* element, RECT* limits, POINT* gCursor, RECT* margin ) nothrow
     {
+        DisplayMargin();
+        DisplayBackground();
+        DisplayBorder();
+        DisplayPadding();
+        DisplayContent();
+        DisplayTextContent();
+        DisplayChildsContent();
+
+
+        /*        
         int elementWidth;
         int elementHeight;
 
@@ -522,6 +532,13 @@ struct Drawer
                 margin
             );
         }
+        */
+    }
+
+
+    void DrawText()
+    {
+        //
     }
 
 

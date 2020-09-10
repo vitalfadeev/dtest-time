@@ -5,6 +5,8 @@ import tools : Writeln;
 import tools : Writefln;
 import tools : GET_X_LPARAM;
 import tools : GET_Y_LPARAM;
+import eventtarget : EventType;
+import eventtarget : EventListener;
 
 alias uint COLORREF;
 
@@ -129,6 +131,16 @@ struct Computed
     int             wrapLine        = 0;
     Overflow        overflowX       = Overflow.VISIBLE;
     Overflow        overflowY       = Overflow.VISIBLE;
+
+    Content         content;
+}
+
+
+struct Content
+{
+    string before;
+    string text;
+    string after;
 }
 
 
@@ -232,24 +244,128 @@ enum Overflow
 }
 
 
+struct Collection
+{
+    Node* firstChild;
+    Node* lastChild;
+
+
+    uint length()
+    {
+        if ( firstChild is null )
+        {
+            return 0;
+        }
+        else
+        {
+            uint counter; 
+
+            for( auto c = firstChild; c !is null; c = c.nextSibling ) 
+                counter++; 
+
+            return counter; 
+        }
+    }
+
+
+    Element* item( uint index )
+    {
+        if ( firstChild is null )
+        {
+            return null;
+        }
+        else
+        {
+            uint counter; 
+
+            for( auto c = firstChild; c !is null; c = c.nextSibling ) 
+            {
+                if ( counter == index )
+                {
+                    return cast( Element* ) c;
+                }
+
+                counter++; 
+            }
+
+            return null; 
+        }
+    }
+}
+
+
 struct Element
 {
     ElementState elementState;
-    Style        style;
+    Style        style;         // attributes 
     Computed     computed;
-    Element*[]   childs;
-    Element*     parent;
+    string[]     classList;
 
-
-    void addChild( Element*  c ) nothrow
+    void         className( string newClassName )
     {
-        if ( c.parent !is null )
-        {
-            c.parent.removeChild( c );
-        }
+        classList = newClassName.split( " " );
+    }
 
-        c.parent = &this;
-        childs ~= c;
+    string       className()
+    {
+        classList.join( " " );
+    }
+
+    uint         childElementCount() 
+    { 
+        if ( firstChild is null )
+        {
+            return 0;
+        }
+        else
+        {
+            uint counter; 
+
+            for( auto c = firstChild; c !is null; c = c.nextSibling ) 
+                counter++; 
+
+            return counter; 
+        }
+    };
+
+    Collection*  children()
+    {
+        auto collection = new Collection( firstChild, lastChild );
+
+        return collection;
+    }
+
+    uint         clientHeight;
+    uint         clientLeft;
+    uint         clientTop;
+    uint         clientWidth;
+    Element*     firstElementChild() { return cast( Element* ) node.firstChild; }
+    string       id;
+    Element*     lastElementChild() { return cast( Element* ) node.lastChild; }
+    Element*     nextElementSibling() { return cast( Element* ) node.nextSibling; }
+    Element*     previousElementSibling() { return cast( Element* ) node.previousSibling; }
+    int          scrollHeight;
+    int          scrollLeft;
+    int          scrollTop;
+    int          scrollWidth;
+    string       tagName;
+
+
+    Element* addChild( Element* c ) nothrow
+    {
+        return cast( Element* ) node.appendChild( cast( Node* ) c );
+    }
+
+
+    void addEventListener( EventType type, EventListener* listener, bool capture, bool passive, bool useCapture )
+    {
+        //
+    }
+
+
+    Element* closest( string selector )
+    {
+        //
     }
 
 
