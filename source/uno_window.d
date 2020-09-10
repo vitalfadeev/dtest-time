@@ -145,11 +145,17 @@ HWND CreateWindowUno()
 Element* CreateElements() nothrow
 {
     auto rootElement = new Element();
-    rootElement.style.left    = 0;
-    rootElement.style.top     = 0;
-    rootElement.style.right   = 120;
-    rootElement.style.bottom  = 10;
-    rootElement.style.display = "inline";
+    //rootElement.style.left            = 0;
+    //rootElement.style.top             = 0;
+    //rootElement.style.right           = 120;
+    //rootElement.style.bottom          = 10;
+    rootElement.style.borderLeftWidth = 3;
+    rootElement.style.borderTopWidth  = 3;
+    rootElement.style.paddingLeft     = 5;
+    rootElement.style.paddingTop      = 5;
+    //rootElement.style.paddingRight  = 5;
+    //rootElement.style.paddingBottom = 5;
+    rootElement.style.display         = "inline";
 
 
     auto elementStateA = new Element();
@@ -157,11 +163,9 @@ Element* CreateElements() nothrow
     with ( elementStateA )
     {
         style.marginLeft = 0;
-        style.left       = 0;
-        style.top        = 0;
-        style.right      = 10;
-        style.bottom     = 10;
         style.display    = "inline-block";
+        style.width      = 10;
+        style.height     = 10;
     }
 
 
@@ -170,11 +174,9 @@ Element* CreateElements() nothrow
     with ( elementStateB )
     {
         style.marginLeft = 10;
-        style.left       = 0;
-        style.top        = 0;
-        style.right      = 10;
-        style.bottom     = 10;
         style.display    = "inline-block";
+        style.width      = 10;
+        style.height     = 10;
     }
 
 
@@ -183,11 +185,9 @@ Element* CreateElements() nothrow
     with ( elementStateC )
     {
         style.marginLeft = 10;
-        style.left       = 0;
-        style.top        = 0;
-        style.right      = 10;
-        style.bottom     = 10;
         style.display    = "inline-block";
+        style.width      = 10;
+        style.height     = 10;
     }
 
 
@@ -196,11 +196,9 @@ Element* CreateElements() nothrow
     with ( elementStateD )
     {
         style.marginLeft = 10;
-        style.left       = 0;
-        style.top        = 0;
-        style.right      = 10;
-        style.bottom     = 10;
         style.display    = "inline-block";
+        style.width      = 10;
+        style.height     = 10;
     }
 
 
@@ -219,8 +217,8 @@ void WLoop( HDC hdc, Element* rootElement, RECT* wRect ) nothrow
     Computer().ComputeTree( rootElement );
  
     // Draw
-    POINT pt = { 0, 0 }; // Graphic Cursor
-    RECT margin = { 0, 0, 0, 0 };
-    Drawer().DrawTree( hdc, rootElement, wRect, &pt, &margin );
+    POINT gCursor = { 0, 0 }; // Graphic Cursor
+    RECT  margin  = { 0, 0, 0, 0 };
+    Drawer().DrawTree( hdc, rootElement, wRect, &gCursor, &margin );
 }
 

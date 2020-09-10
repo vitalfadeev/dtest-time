@@ -1,0 +1,23 @@
+// span ( display: inline )
+//   wrap
+// ( width ignored )
+
+// span ( display: inline-block )
+//   overflow-x
+//   width
+//     auto
+//       to limits
+//       wrap
+//     fixed
+//       to fixed
+//       wrap
+
+// div ( display: block )
+//   overflow-x
+//   width
+//     auto
+//       to limits
+//       wrap
+//     fixed
+//       to fixed
+//       wrap
